@@ -1,12 +1,18 @@
+body {
+    overflow-x: hidden;
+}
+
 #img-tree {
-    width: 100%;
-    max-width: 450px;
-    transform: rotate(10deg);
+    width: auto;
+    max-width: 500px;
+    position: absolute;
+    right: 0px;
+    
 }
 
 #welcome {
     padding: 50px;
-    padding-top: 50px;
+    padding-top: 200px;
     color: white;
 }
 
@@ -24,6 +30,22 @@
 #firstSection {
     background-color: cadetblue;
     padding-top: 70px;
+    min-height: 500px;
+}
+
+@media (max-width: 750px) {
+    #img-tree {
+        position: static;
+
+    }
+
+    #welcome h1 {
+        text-align: center;
+    }
+
+    #welcome .btn {
+        width: 40% !important;
+    }
 }
 
 .img {
@@ -49,11 +71,17 @@
     font-family: 'Rampart One', cursive;
 }
 
+#secondSection {
+    top: -20px;
+    position: relative;
+    background-color: white;
+}
+
 #secondSection p{
     font-size: calc(20px + 5%);
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 50%;
+    max-width: 60%;
 }
 
 #thirdSection {
@@ -65,6 +93,8 @@
 #Slider01 .carousel-item img {
     width: 80%;
     max-width: 600px;
+    height: 300px;
     margin: auto;
     border-radius: 20px;
 }
+
