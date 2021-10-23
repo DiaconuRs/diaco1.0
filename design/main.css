@@ -6,13 +6,13 @@ body {
     width: auto;
     max-width: 500px;
     position: absolute;
-    right: 0px;
-    
+    right: -30px;
+    bottom: -30px;
 }
 
 #welcome {
     padding: 50px;
-    padding-top: 200px;
+    padding-top: 160px;
     color: white;
 }
 
@@ -33,7 +33,7 @@ body {
     min-height: 500px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     #img-tree {
         position: static;
 
@@ -45,6 +45,10 @@ body {
 
     #welcome .btn {
         width: 40% !important;
+    }
+
+    #secondSection p {
+        width: 60%;
     }
 }
 
@@ -81,7 +85,7 @@ body {
     font-size: calc(20px + 5%);
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 60%;
+    max-width: 90%;
 }
 
 #thirdSection {
